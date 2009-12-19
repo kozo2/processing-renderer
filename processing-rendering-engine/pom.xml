@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<url>http://cg06.naist.jp/gsoc/wiki</url>
+
+	<parent>
+		<relativePath>../poms/compiled/</relativePath>
+		<groupId>org.cytoscape.processing-renderer.build
+		</groupId>
+		<artifactId>compiled-bundle-settings
+		</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<properties>
+		<bundle.symbolicName>
+			org.cytoscape.processing-renderer.processing-rendering-engine
+		</bundle.symbolicName>
+		<bundle.namespace>org.cytoscape.view.presentation.processing
+		</bundle.namespace>
+	</properties>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.cytoscape.processing-renderer
+	</groupId>
+	<artifactId>processing-rendering-engine
+	</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<name>${bundle.symbolicName}
+		[${bundle.namespace}]</name>
+
+	<packaging>bundle</packaging>
+
+	<dependencies>
+
+		<!-- Processing and OpenGL -->
+		<dependency>
+			<groupId>org.processing</groupId>
+			<artifactId>processing-gl-osgi</artifactId>
+			<version>1.0.5-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>net.java.jogl</groupId>
+			<artifactId>jogl-osgi</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<!-- Processing Library Bundles -->
+		<dependency>
+			<groupId>toxi</groupId>
+			<artifactId>core</artifactId>
+			<version>0014-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>toxi</groupId>
+			<artifactId>physics</artifactId>
+			<version>0004-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.cytoscape.wrappers</groupId>
+			<artifactId>gestalt.gestalt-osgi</artifactId>
+			<version>0.0.1</version>
+
+		</dependency>
+
+		<!-- Cytoscape Dependency -->
+		<dependency>
+			<groupId>org.cytoscape</groupId>
+			<artifactId>presentation-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.cytoscape</groupId>
+			<artifactId>model-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.cytoscape</groupId>
+			<artifactId>viewmodel-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.cytoscape</groupId>
+			<artifactId>vizmap-gui</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.cytoscape</groupId>
+			<artifactId>work-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.cytoscape</groupId>
+			<artifactId>default-mappings</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cytoscape</groupId>
+			<artifactId>application</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+</project>
