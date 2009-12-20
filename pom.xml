@@ -146,4 +146,10 @@
 		</repository>
 	</repositories>
 
+        <scm>
+          <connection>scm:git:git@github.com:kozo2/processing-renderer.git</connection>
+          <url>scm:git:git@github.com:kozo2/processing-renderer.git</url>
+          <developerConnection>scm:git:git@github.com:kozo2/processing-renderer.git</developerConnection>
+        </scm>
+
 </project>
